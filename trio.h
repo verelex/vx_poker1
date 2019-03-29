@@ -1,3 +1,5 @@
+// this is container of 3 elements
+// old version not support tuple
 #pragma once
 #ifndef STD_TRIO_H
 #define STD_TRIO_H
