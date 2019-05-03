@@ -12,24 +12,24 @@
 #define SUIT_DIAMONDS 3 // bubny
 #define SUIT_DIFFER   4 // another
 
-// other nominals
-#define NOM_ACE1  1  // tuz
-#define NOM_JACK  11 // valet
-#define NOM_QUEEN 12 // dama
-#define NOM_KING  13 // korol
-#define NOM_ACE   14 // tuz
-#define NOM_JOKER 15
+// other values
+#define VAL_ACE1  1  // tuz
+#define VAL_JACK  11 // valet
+#define VAL_QUEEN 12 // dama
+#define VAL_KING  13 // korol
+#define VAL_ACE   14 // tuz
+#define VAL_JOKER 15
 
 // hand types
 #define HT_ROYAL_FLUSH    9000
 #define HT_STRAIGHT_FLUSH 8000
-#define HT_QUADS          7000
+#define HT_QUAD           7000
 #define HT_FULL_HOUSE     6000
 #define HT_FLUSH          5000
 #define HT_STRAIGHT       4000
 #define HT_TRIO           3000
 #define HT_TWO_PAIRS      2000
-#define HT_ONE_PAIR       1000
+#define HT_PAIR           1000
 #define HT_HIGH_CARD      0
 
 /*
@@ -49,7 +49,7 @@ int R = (int) _RANDOM(52.0);  // [0;51]
 
 typedef trio< int,int,int >  CCard; // karta (nominal,suit,id)
 typedef std::list< CCard >  CDeck; // koloda
-typedef std::list< CCard >  CHand; // ruka
+
 typedef quad< int,CHand,int,int >  CGamer; // igrok (id,card_list,hand_type,kicker)
 typedef std::list< CGamer >  CGamers; // igroki
 typedef std::pair< CHand,CGamers >  CTable; // stol (+za stolom neskolko igrokov)
