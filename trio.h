@@ -58,7 +58,8 @@ template<class _Ty1, class _Ty2, class _Ty3> inline
 	bool operator<(const trio<_Ty1, _Ty2, _Ty3>& _Left,
 		const trio<_Ty1, _Ty2, _Ty3>& _Right)
 	{	// test if _Left < _Right for trios
-	return (_Left.first < _Right.first && _Left.second < _Right.second && _Left.third < _Right.third);
+	//return (_Left.first < _Right.first && _Left.second < _Right.second && _Left.third < _Right.third);
+	return (_Left.first < _Right.first);
 	}
 
 template<class _Ty1, class _Ty2, class _Ty3> inline
